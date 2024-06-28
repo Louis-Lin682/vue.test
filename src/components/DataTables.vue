@@ -12,10 +12,14 @@
       </li>
     </ul>
   </div>
+  <booking-modal v-if="$store.state.bookingId!=null"></booking-modal>
 </template>
 
 <script>
+import BookingModal from './BookingModal.vue';
+
 export default {
+  components: { BookingModal },
   name: 'DataTables',
   props: {
     
